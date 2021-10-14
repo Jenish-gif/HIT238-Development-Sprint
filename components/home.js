@@ -5,7 +5,6 @@ import Title from './title';
 export default function Home() {
   return (
     <View>
-        <Title />
 
         <Text>HomePage</Text>
 
