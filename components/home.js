@@ -20,7 +20,6 @@ export default function Home() {
         <TouchableOpacity>       
         <Text>Your Score</Text>
         </TouchableOpacity>
-
     </View>
   );
 }
