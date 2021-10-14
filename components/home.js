@@ -1,12 +1,25 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import Title from './title';
 
-export default function App() {
+export default function Home() {
   return (
     <View>
-      <Text>
-       Welcome to QuiCo App Developed By Jenish Oli
-      </Text>
+        <Title />
+
+        <Text>HomePage</Text>
+
+        <TouchableOpacity>       
+        <Text>Take A Test</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity>       
+        <Text>Profile</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity>       
+        <Text>Your Score</Text>
+        </TouchableOpacity>
 
     </View>
   );
