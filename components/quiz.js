@@ -1,9 +1,11 @@
 
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { NavigationContainer, useNavigation } from '@react-navigation/native';
 
 export default function Quiz() {
   return (
+    <NavigationContainer>
     <View style={styles.container}>
 
       <View style={styles.question}>
@@ -42,6 +44,7 @@ export default function Quiz() {
       </View>
 
     </View>
+    </NavigationContainer>
   );
 }
 

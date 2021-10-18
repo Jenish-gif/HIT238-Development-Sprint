@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { TextInput, Text, Button, Alert, View, StyleSheet } from 'react-native';
 import { Formik } from 'formik'
+import { NavigationContainer, useNavigation } from '@react-navigation/native';
+import Home from './home';
+import Quiz from './quiz';
 
 
 export default class Form extends Component {
-  render() {
+
+    render() {
     const inputStyle = {
       borderWidth: 1,
       borderColor: '#4e4e4e',
@@ -54,11 +58,12 @@ export default class Form extends Component {
             {touched.password && errors.password &&
               <Text style={{ fontSize: 12, color: '#FF0D10' }}>{errors.password}</Text>
             }
+
             <Button
               color="#1b4332"
-              title='Submit'
+              title='Start QuiZZing'
               disabled={!isValid}
-              onPress={handleSubmit}
+              onPress={() => navigation.navigate('Quiz')}
             />
           </View>
         )}

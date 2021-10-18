@@ -1,18 +1,20 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import Title from './title';
+import Title from './title'; 
+import { NavigationContainer, useNavigation } from '@react-navigation/native';
 
 export default function Home() {
-  return (
+
+     return (
     <View style={styles.AppView}>
         <Text style={styles.AppName}>QuiCo</Text> 
 
         <Text style={styles.HomeName}>Home</Text>
 
-        <TouchableOpacity>       
+        <TouchableOpacity onPress={() => navigation.navigateToQuiz('Quiz')}>      
         <Text style={styles.asd}>Take A Test</Text>
         </TouchableOpacity>
-                
+    
         <TouchableOpacity>       
         <Text style={styles.asd}>Profile</Text>
         </TouchableOpacity>
