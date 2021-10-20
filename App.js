@@ -14,7 +14,7 @@ export default function App() {
   return (
     <View style={styles.container}>
     <Text style={styles.AppName}>QuiCo</Text> 
-    <Quiz/>
+    <Result/>
     </View>
   );
 }

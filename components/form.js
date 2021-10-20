@@ -4,7 +4,7 @@ import { Formik } from 'formik'
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import Home from './home';
 import Quiz from './quiz';
-
+``
 
 export default class Form extends Component {
 
