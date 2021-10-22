@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
         fontSize: 20, 
         justifyContent:"space-between",
         flexDirection: "row",
-        paddingBottom: 150,
+        paddingBottom: 30,
     },
 
     button:{

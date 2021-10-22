@@ -11,7 +11,7 @@ function MyStack() {
   return (
     <Stack.Navigator>
     <Stack.Screen name="Login Page" component={Title} />
-    <Stack.Screen name="Home" component={Home} />
+    <Stack.Screen name="Home" component={Home}/>
     <Stack.Screen name="Quiz" component={Quiz} />
     <Stack.Screen name="Result" component={result} />
       </Stack.Navigator>
