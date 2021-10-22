@@ -2,16 +2,12 @@ import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Title from './title'; 
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
+import { MyStack} from './index';
 
-export default function Home() {
-
+const Home =({navigation}) => {
      return (
     <View style={styles.AppView}>
-        <Text style={styles.AppName}>QuiCo</Text> 
-
-        <Text style={styles.HomeName}>Home</Text>
-
-        <TouchableOpacity onPress={() => navigation.navigateToQuiz('Quiz')}>      
+        <TouchableOpacity onPress={()=>navigation.navigate('Quiz')}>      
         <Text style={styles.asd}>Take A Test</Text>
         </TouchableOpacity>
     
@@ -26,6 +22,8 @@ export default function Home() {
   );
 }
 
+export default Home;
+
 const styles = StyleSheet.create({
     AppView:{
         position: "absolute", 
@@ -33,24 +31,6 @@ const styles = StyleSheet.create({
         bottom: 0,
         left: 0,
         right: 0,
-        },
-
-    AppName:{
-        fontSize: 60,
-        textAlign: "center",
-        fontWeight: '800',
-        backgroundColor: "#40916c",
-        paddingTop: 40,
-        paddingBottom: 10,
-        },
-    
-    HomeName:{
-        fontSize: 25,
-        textAlign: "left",
-        backgroundColor: "#95d5b2",
-        padding: 20,
-        borderColor: "white",
-        borderWidth: 2,
         },
 
     asd:{

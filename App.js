@@ -7,14 +7,17 @@ import Home from './components/home';
 import Quiz from './components/quiz';
 import Result from './components/result';
 import Title from './components/title';
-import Form from './components/form';
+import { NavigationContainer } from '@react-navigation/native';
+import MyStack from './components';
 
 
 export default function App() {
   return (
     <View style={styles.container}>
     <Text style={styles.AppName}>QuiCo</Text> 
-    <Result/>
+    <NavigationContainer>
+      <MyStack/>
+    </NavigationContainer>
     </View>
   );
 }

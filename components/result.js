@@ -2,7 +2,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Button, Image} from 'react-native';
 
-export default function result() {
+const Result =({navigation}) => {
   return (
     <View>
 
@@ -22,7 +22,7 @@ export default function result() {
 
         <Text style={styles.Great}>You Did Great!!!</Text>
 
-        <TouchableOpacity style={styles.Homebutton}>       
+        <TouchableOpacity style={styles.Homebutton} onPress={()=>navigation.navigate('Home')}>      
             <Text  style={styles.buttonText}>HOME</Text>
         </TouchableOpacity>
 
@@ -30,6 +30,7 @@ export default function result() {
 
   );
 }
+export default Result;
 
 const styles = StyleSheet.create({
 
