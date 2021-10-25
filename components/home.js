@@ -35,11 +35,13 @@ const styles = StyleSheet.create({
 
     asd:{
         textAlign: "center",
-        fontSize: 40,
+        fontSize: 50,
         padding: 50,
-        backgroundColor: "#588157",
-        borderColor: "#95d5b2",
-        borderWidth: 10,
+        backgroundColor:  "#a5a58d",
+        borderColor: '#eddcd2',
+        borderWidth: 15,
+        borderRadius: 50,
+        color: '#2b2d42',
         
 
 

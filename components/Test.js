@@ -20,6 +20,17 @@ const Test =({navigation}) => {
         <TouchableOpacity onPress={()=>navigation.navigate('Score')}>    
         <Text style={styles.asd}>JAVASCRIPT</Text>
         </TouchableOpacity>
+
+        <TouchableOpacity onPress={()=>navigation.navigate('Score')}>    
+        <Text style={styles.asd}>Python</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.Homebutton} onPress={()=>navigation.navigate('Home')}>      
+            <Text  style={styles.buttonText}>HOME</Text>
+        </TouchableOpacity>
+
+
+
     </View>
   );
 }
@@ -38,14 +49,32 @@ const styles = StyleSheet.create({
     asd:{
         textAlign: "center",
         fontSize: 40,
-        padding: 50,
-        backgroundColor: "white",
-        borderColor: "#95d5b2",
+        padding: 20,
+        backgroundColor: "#8dab7f",
+        borderColor: "#6a8eae",
         borderWidth: 10,
+        color: '#682d63',
         
-
-
     },
+
+    Homebutton:{
+        margin: 50,
+        borderWidth: 3,
+        borderColor: 'white',
+        backgroundColor: "#427aa1",
+        padding: 15,
+        borderRadius: 15,
+        alignItems: "center",
+        
+    },
+
+       buttonText:{    
+        
+        fontSize: 20,  
+        fontWeight: '600',
+        color: 'white',
+       },
+
 
 
 
