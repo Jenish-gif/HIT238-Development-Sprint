@@ -1,52 +1,55 @@
-
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Button, Image} from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View, RightOutlined } from 'react-native';
+import Title from './title'; 
+import { NavigationContainer, useNavigation } from '@react-navigation/native';
+import { MyStack} from './index';
 
 const Profile =({navigation}) => {
-  return (
-    <View>
+     return (
+    <View style={styles.AppView}>
+        <TouchableOpacity onPress={()=>navigation.navigate('Test')}>      
+        <Text style={styles.asd}>About Us</Text>
+        </TouchableOpacity>
+    
+        <TouchableOpacity onPress={()=>navigation.navigate('Profile')}>    
+        <Text style={styles.asd}>Notification</Text>
+        </TouchableOpacity>
 
+        <TouchableOpacity onPress={()=>navigation.navigate('Score')}>    
+        <Text style={styles.asd}>Contact</Text>
+        </TouchableOpacity>
 
-        </View>
+        <TouchableOpacity onPress={()=>navigation.navigate('Login Page')}>    
+        <Text style={styles.asd}>Sign Out</Text>
+        </TouchableOpacity>
 
+        <TouchableOpacity style={styles.Homebutton} onPress={()=>navigation.navigate('Home')}>      
+            <Text  style={styles.buttonText}>HOME</Text>
+        </TouchableOpacity>
+
+    </View>
+    
   );
 }
+
 export default Profile;
 
 const styles = StyleSheet.create({
+    AppView:{
+        position: "absolute", 
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0,
+        },
 
-    ScoreName:{
-        fontSize: 25,
+    asd:{
         textAlign: "left",
-        backgroundColor: "#95d5b2",
-        padding: 20,
-        borderColor: "white",
+        fontSize: 20,
+        padding: 25,
+        backgroundColor: "white",
+        borderColor: "#95d5b2",
         borderWidth: 2,
-    },
-
-    Score:{
-        fontSize: 40,
-        textAlign: 'center',
-        paddingTop: 20,
-        color: '#064789',
-    },
-
-    banner:{
-        height: 200,
-        width: 350,
-    },
-
-    bannerContainer:{
-        justifyContent: 'center',
-        alignItems: "center"
-    },
-
-    Great:{
-        fontSize: 40,
-        textAlign: 'center',
-        paddingTop: 5,
-        color: 'red',
-
     },
 
     Homebutton:{
@@ -60,11 +63,11 @@ const styles = StyleSheet.create({
         
     },
 
-    buttonText:{    
+       buttonText:{    
         fontSize: 20,  
         fontWeight: '600',
         color: 'white',
        },
+
   
-  });
-  
+});

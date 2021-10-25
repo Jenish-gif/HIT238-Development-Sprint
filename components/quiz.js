@@ -9,7 +9,10 @@ const Quiz = ({navigation}) => {
     const getQuiz= async() => {
         const url='https://opentdb.com/api.php?amount=12&category=18&difficulty=medium&type=multiple';
         const res = await fetch(url);
-      
+        console.log(res);
+        const data = await res.json();
+        console.log(data.results[0]);
+        setQuestions(data.results);
     };
 
     useEffect(() => {
@@ -46,11 +49,11 @@ const Quiz = ({navigation}) => {
 
       <View style={styles.Bottom}>
       <TouchableOpacity style={styles.button}>       
-            <Text style={styles.buttonText}>NEXT</Text>
+            <Text style={styles.buttonText}>SKIP</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button} onPress={()=>navigation.navigate('Result')}>        
-            <Text  style={styles.buttonText}>END</Text>
+        <TouchableOpacity style={styles.button}>       
+            <Text  style={styles.buttonText}>NEXT</Text>
         </TouchableOpacity>
 
       </View>
@@ -89,7 +92,7 @@ const styles = StyleSheet.create({
         fontSize: 20, 
         justifyContent:"space-between",
         flexDirection: "row",
-        paddingBottom: 30,
+        paddingBottom: 150,
     },
 
     button:{

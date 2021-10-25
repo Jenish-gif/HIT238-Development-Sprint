@@ -1,16 +1,18 @@
 import React from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View, ImageBackground, Image } from 'react-native';
 import Title from './title'; 
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { MyStack} from './index';
 
+
 const Test =({navigation}) => {
      return (
-    <View style={styles.AppView}>
-        <TouchableOpacity onPress={()=>navigation.navigate('Test')}>      
+    <View style={styles.AppView}>      
+     
+        <TouchableOpacity onPress={()=>navigation.navigate('Test')}> 
         <Text style={styles.asd}>HTML</Text>
         </TouchableOpacity>
-    
+            
         <TouchableOpacity onPress={()=>navigation.navigate('Profile')}>    
         <Text style={styles.asd}>CSS</Text>
         </TouchableOpacity>
@@ -37,7 +39,7 @@ const styles = StyleSheet.create({
         textAlign: "center",
         fontSize: 40,
         padding: 50,
-        backgroundColor: "#588157",
+        backgroundColor: "white",
         borderColor: "#95d5b2",
         borderWidth: 10,
         
