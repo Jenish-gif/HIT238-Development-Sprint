@@ -9,7 +9,7 @@ const Test =({navigation}) => {
      return (
     <View style={styles.AppView}>      
      
-        <TouchableOpacity onPress={()=>navigation.navigate('Test')}> 
+        <TouchableOpacity onPress={()=>navigation.navigate('HTML')}> 
         <Text style={styles.asd}>HTML</Text>
         </TouchableOpacity>
             

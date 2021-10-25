@@ -4,21 +4,7 @@ import { useState } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 
-const Quiz = ({navigation}) => {
-    const [questions, setQuestions] = useState();
-    const getQuiz= async() => {
-        const url='https://opentdb.com/api.php?amount=12&category=18&difficulty=medium&type=multiple';
-        const res = await fetch(url);
-        console.log(res);
-        const data = await res.json();
-        console.log(data.results[0]);
-        setQuestions(data.results);
-    };
-
-    useEffect(() => {
-        getQuiz();
-
-    }, []);
+const HTML = ({navigation}) => {
 
   return (
        <View style={styles.container}>
@@ -55,7 +41,6 @@ const Quiz = ({navigation}) => {
         <TouchableOpacity style={styles.button}>       
             <Text  style={styles.buttonText}>NEXT</Text>
         </TouchableOpacity>
-        
 
       </View>
 
@@ -64,7 +49,7 @@ const Quiz = ({navigation}) => {
   );
 }
 
-export default Quiz
+export default HTML
 
 const styles = StyleSheet.create({
 
@@ -93,7 +78,7 @@ const styles = StyleSheet.create({
         fontSize: 20, 
         justifyContent:"space-between",
         flexDirection: "row",
-        paddingBottom: 150,
+        paddingBottom: 15,
     },
 
     button:{
@@ -126,5 +111,7 @@ const styles = StyleSheet.create({
         color: 'white',
         fontWeight: '500',
     },
+
+
 
 });
