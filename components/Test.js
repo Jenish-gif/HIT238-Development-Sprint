@@ -4,25 +4,25 @@ import Title from './title';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { MyStack} from './index';
 
-const Home =({navigation}) => {
+const Test =({navigation}) => {
      return (
     <View style={styles.AppView}>
         <TouchableOpacity onPress={()=>navigation.navigate('Test')}>      
-        <Text style={styles.asd}>Take A Test</Text>
+        <Text style={styles.asd}>HTML</Text>
         </TouchableOpacity>
     
         <TouchableOpacity onPress={()=>navigation.navigate('Profile')}>    
-        <Text style={styles.asd}>Profile</Text>
+        <Text style={styles.asd}>CSS</Text>
         </TouchableOpacity>
 
         <TouchableOpacity onPress={()=>navigation.navigate('Score')}>    
-        <Text style={styles.asd}>Your Score</Text>
+        <Text style={styles.asd}>JAVASCRIPT</Text>
         </TouchableOpacity>
     </View>
   );
 }
 
-export default Home;
+export default Test;
 
 const styles = StyleSheet.create({
     AppView:{

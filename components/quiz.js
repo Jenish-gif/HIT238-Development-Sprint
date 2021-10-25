@@ -9,10 +9,7 @@ const Quiz = ({navigation}) => {
     const getQuiz= async() => {
         const url='https://opentdb.com/api.php?amount=12&category=18&difficulty=medium&type=multiple';
         const res = await fetch(url);
-        console.log(res);
-        const data = await res.json();
-        console.log(data.results[0]);
-        setQuestions(data.results);
+      
     };
 
     useEffect(() => {
