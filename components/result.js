@@ -7,10 +7,10 @@ const Result =({navigation}) => {
     <View>
 
         <View>
-        <Text style={styles.ScoreName}>Your Score:</Text>
+        <Text style={styles.ScoreName}>HTML Quiz Set 1</Text>
         </View>
 
-        <Text style={styles.Score}>9/12</Text>
+        <Text style={styles.Score}>Level 1 Completed</Text>
     
         <View style={styles.bannerContainer}>
         <Image 

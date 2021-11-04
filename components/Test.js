@@ -1,8 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, TouchableOpacity, View, ImageBackground, Image } from 'react-native';
-import Title from './title'; 
-import { NavigationContainer, useNavigation } from '@react-navigation/native';
-import { MyStack} from './index';
+import { StyleSheet, Text, TouchableOpacity, View, } from 'react-native';
+
 
 
 const Test =({navigation}) => {
@@ -10,19 +8,19 @@ const Test =({navigation}) => {
          
         <View style={styles.AppView}>      
      
-        <TouchableOpacity onPress={()=>navigation.navigate('HTML')}> 
+        <TouchableOpacity onPress={()=>navigation.navigate('Quiz')}> 
         <Text style={styles.asd}>HTML</Text>
         </TouchableOpacity>
             
-        <TouchableOpacity onPress={()=>navigation.navigate('Profile')}>    
+        <TouchableOpacity onPress={()=>navigation.navigate('Development')}>    
         <Text style={styles.asd}>CSS</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={()=>navigation.navigate('Score')}>    
+        <TouchableOpacity onPress={()=>navigation.navigate('Development')}>    
         <Text style={styles.asd}>JAVASCRIPT</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={()=>navigation.navigate('Score')}>    
+        <TouchableOpacity onPress={()=>navigation.navigate('Development')}>    
         <Text style={styles.asd}>Python</Text>
         </TouchableOpacity>
 

@@ -1,12 +1,7 @@
 import 'react-native-gesture-handler';
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import Home from './components/home';
-import Quiz from './components/quiz';
-import Result from './components/result';
-import Title from './components/title';
 import { NavigationContainer } from '@react-navigation/native';
 import MyStack from './components';
 

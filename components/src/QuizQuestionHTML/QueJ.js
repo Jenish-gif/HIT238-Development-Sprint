@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, TouchableHighlight } from 'react-native';
 
-const Quiz = ({navigation}) => {
+const QuizJ = ({navigation}) => {
   return (
        <View style={styles.container}>
 
@@ -32,7 +32,7 @@ const Quiz = ({navigation}) => {
 
       <View style={styles.Bottom}>
 
-        <TouchableOpacity style={styles.button} onPress={()=>navigation.navigate('QuizA')}>       
+        <TouchableOpacity style={styles.button} onPress={()=>navigation.navigate('QuizK')}>   
             <Text  style={styles.buttonText}>NEXT</Text>
         </TouchableOpacity>
 
@@ -44,7 +44,7 @@ const Quiz = ({navigation}) => {
 }
 
 
-export default Quiz
+export default QuizJ
 
 const styles = StyleSheet.create({
 

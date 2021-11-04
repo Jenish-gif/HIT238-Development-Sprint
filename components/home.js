@@ -1,8 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import Title from './title'; 
-import { NavigationContainer, useNavigation } from '@react-navigation/native';
-import { MyStack} from './index';
 
 const Home =({navigation}) => {
      return (
@@ -37,11 +34,11 @@ const styles = StyleSheet.create({
         textAlign: "center",
         fontSize: 50,
         padding: 50,
-        backgroundColor:  "#a5a58d",
-        borderColor: '#eddcd2',
+        borderColor: "#95d5b2",
         borderWidth: 15,
         borderRadius: 50,
-        color: 'red',
+        color: 'black',
+              
         
     },
 

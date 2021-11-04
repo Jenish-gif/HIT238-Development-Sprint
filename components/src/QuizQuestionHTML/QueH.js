@@ -1,12 +1,7 @@
+import React from 'react';
+import { StyleSheet, Text, View, TouchableOpacity, TouchableHighlight } from 'react-native';
 
-import React, { useEffect } from 'react';
-import { useState } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
-import { NavigationContainer, useNavigation } from '@react-navigation/native';
-
-const HTML = ({navigation}) => {
-    const [questions, setQuestions] = useState();
-   
+const QuizH = ({navigation}) => {
   return (
        <View style={styles.container}>
 
@@ -17,32 +12,29 @@ const HTML = ({navigation}) => {
       </View>
 
       <View style={styles.answer}>
-        <TouchableOpacity style={styles.answerBox}>       
+        <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>        
             <Text style={styles.answerName}>Desktop Application</Text>
-        </TouchableOpacity>
+        </TouchableOpacity>    
 
         <TouchableOpacity style={styles.answerBox}>       
             <Text style={styles.answerName} >Programming Language</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.answerBox}>       
+
+        <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>       
             <Text style={styles.answerName}>Mobile Application</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.answerBox} >       
+        <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>       
             <Text style={styles.answerName}>Mark's Language</Text>
         </TouchableOpacity>
       </View>
 
       <View style={styles.Bottom}>
-      <TouchableOpacity style={styles.button}>       
-            <Text style={styles.buttonText}>SKIP</Text>
-        </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button}>       
+        <TouchableOpacity style={styles.button} onPress={()=>navigation.navigate('QuizI')}>    
             <Text  style={styles.buttonText}>NEXT</Text>
         </TouchableOpacity>
-        
 
       </View>
 
@@ -51,7 +43,8 @@ const HTML = ({navigation}) => {
   );
 }
 
-export default HTML
+
+export default QuizH
 
 const styles = StyleSheet.create({
 
@@ -77,10 +70,11 @@ const styles = StyleSheet.create({
     },
 
     Bottom:{    
-        fontSize: 20, 
-        justifyContent:"space-between",
-        flexDirection: "row",
-        paddingBottom: 10,
+        fontSize: 20,        
+        position: 'absolute',
+        bottom:30,
+        right:50,
+
     },
 
     button:{

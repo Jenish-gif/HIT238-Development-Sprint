@@ -37,7 +37,7 @@ const Title =({navigation}) => {
               style={inputStyle}
               onChangeText={handleChange('name')}
               onBlur={() => setFieldTouched('name')}
-              placeholder="Name"
+              placeholder="Enter a User Name"
             />
             {touched.name && errors.name &&
               <Text style={{ fontSize: 12, color: '#FF0D10' }}>{errors.name}</Text>
@@ -52,23 +52,14 @@ const Title =({navigation}) => {
             {touched.email && errors.email &&
               <Text style={{ fontSize: 12, color: '#FF0D10' }}>{errors.email}</Text>
             }
-            <TextInput
-              value={values.password}
-              style={inputStyle}
-              onChangeText={handleChange('password')}
-              placeholder="Password"
-              onBlur={() => setFieldTouched('password')}
-              secureTextEntry={true}
-            />
-            {touched.password && errors.password &&
-              <Text style={{ fontSize: 12, color: '#FF0D10' }}>{errors.password}</Text>
-            }
-
+           
             <Button
               color="#1b4332"
-              title='Start QuiZZing'
+              title='Start Quiz'
               onPress={()=>navigation.navigate('Home') }
             />
+            
+          
           </View>
         )}
       </Formik>
