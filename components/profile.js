@@ -1,19 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View, RightOutlined } from 'react-native';
 import Title from './title'; 
-import { NavigationContainer, useNavigation } from '@react-navigation/native';
-import { MyStack} from './index';
+
 
 const Profile =({navigation}) => {
      return (
     <View style={styles.AppView}>
-        <TouchableOpacity onPress={()=>navigation.navigate('Test')}>      
+        <TouchableOpacity onPress={()=>navigation.navigate('About')}>      
         <Text style={styles.asd}>About Us</Text>
         </TouchableOpacity>
-    
-        <TouchableOpacity onPress={()=>navigation.navigate('Profile')}>    
-        <Text style={styles.asd}>Notification</Text>
-        </TouchableOpacity>
+
 
         <TouchableOpacity onPress={()=>navigation.navigate('Score')}>    
         <Text style={styles.asd}>Contact</Text>

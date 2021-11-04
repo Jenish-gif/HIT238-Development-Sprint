@@ -8,6 +8,7 @@ import Profile from './profile';
 import Score from './score';
 import Test from './Test';
 import HTML from './HTML';
+import About from './about';
 
 const Stack = createStackNavigator();
 
@@ -20,9 +21,12 @@ function MyStack() {
     <Stack.Screen name="Result" component={result} />
 
     <Stack.Screen name="Profile" component={Profile}/>
+    <Stack.Screen name="About" component={About}/>
+
     <Stack.Screen name="Score" component={Score}/>
     <Stack.Screen name="Test" component={Test}/>
     <Stack.Screen name="HTML" component={HTML}/>
+
 
 
       </Stack.Navigator>
