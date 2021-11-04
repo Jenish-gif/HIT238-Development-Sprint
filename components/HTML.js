@@ -5,7 +5,8 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 
 const HTML = ({navigation}) => {
-
+    const [questions, setQuestions] = useState();
+   
   return (
        <View style={styles.container}>
 
@@ -41,6 +42,7 @@ const HTML = ({navigation}) => {
         <TouchableOpacity style={styles.button}>       
             <Text  style={styles.buttonText}>NEXT</Text>
         </TouchableOpacity>
+        
 
       </View>
 
@@ -78,7 +80,7 @@ const styles = StyleSheet.create({
         fontSize: 20, 
         justifyContent:"space-between",
         flexDirection: "row",
-        paddingBottom: 15,
+        paddingBottom: 10,
     },
 
     button:{
@@ -111,7 +113,5 @@ const styles = StyleSheet.create({
         color: 'white',
         fontWeight: '500',
     },
-
-
 
 });
