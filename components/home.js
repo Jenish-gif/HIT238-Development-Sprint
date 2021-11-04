@@ -12,8 +12,8 @@ const Home =({navigation}) => {
         <Text style={styles.asd}>Profile</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={()=>navigation.navigate('Score')}>    
-        <Text style={styles.asd}>Your Score</Text>
+        <TouchableOpacity onPress={()=>navigation.navigate('Progress Report')}>    
+        <Text style={styles.asd}>Progress</Text>
         </TouchableOpacity>
     </View>
   );

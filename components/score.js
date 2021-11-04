@@ -6,12 +6,12 @@ const Score =({navigation}) => {
     return (
             <View style={styles.AppView}>
            
-                <Text style={styles.asd}>You Scored 8 in HTML Quiz 1</Text>
-                <Text style={styles.asd}>You Scored 6 in CSS Quiz 1</Text>
-                <Text style={styles.asd}>You Scored 9 in HTML Quiz 2</Text>
-                <Text style={styles.asd}>You Scored 7 in Python Quiz 1</Text>
-                <Text style={styles.asd}>You Scored 4 in Java Quiz 1</Text>
-                <Text style={styles.asd}>You Scored 7 in CSS Quiz 2</Text>
+                <Text style={styles.asd}>Success: Completed HTML Quiz 1 </Text>
+                <Text style={styles.asd}>Success: Completed CSS Quiz 1</Text>
+                <Text style={styles.asd}>Success: Completed HTML Quiz 2</Text>
+                <Text style={styles.asd}>Success: Completed Python Quiz 1</Text>
+                <Text style={styles.asd}>Success: Completed Java Quiz 1</Text>
+                <Text style={styles.asd}>Success: Completed CSS Quiz 2</Text>
 
         <TouchableOpacity style={styles.Homebutton} onPress={()=>navigation.navigate('Home')}>      
             <Text  style={styles.buttonText}>HOME</Text>

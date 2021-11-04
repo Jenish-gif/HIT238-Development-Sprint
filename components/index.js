@@ -33,7 +33,7 @@ function MyStack() {
     <Stack.Screen name="Profile" component={Profile}/>
     <Stack.Screen name="About" component={About}/>
     <Stack.Screen name="Contact" component={Contact}/>
-    <Stack.Screen name="Score" component={Score}/>
+    <Stack.Screen name="Progress Report" component={Score}/>
     <Stack.Screen name="Test" component={Test}/>
     <Stack.Screen name="Quiz" component={Quiz} options={{header: () => null}}/>
     <Stack.Screen name="Development" component={Development}/>
