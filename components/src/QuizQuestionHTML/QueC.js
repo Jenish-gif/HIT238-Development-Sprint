@@ -7,33 +7,33 @@ const QuizC = ({navigation}) => {
 
       <View style={styles.question}>
           <Text style={styles.questionName}> 
-              Q1. What is HTML?
+              Q4. Which character is used to represent the closing of a tag in HTML?
           </Text>
       </View>
 
       <View style={styles.answer}>
         <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>        
-            <Text style={styles.answerName}>Desktop Application</Text>
+            <Text style={styles.answerName}>.</Text>
         </TouchableOpacity>    
 
-        <TouchableOpacity style={styles.answerBox}>       
-            <Text style={styles.answerName} >Programming Language</Text>
+        <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>          
+            <Text style={styles.answerName}>!</Text>
         </TouchableOpacity>
 
 
-        <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>       
-            <Text style={styles.answerName}>Mobile Application</Text>
+        <TouchableOpacity style={styles.answerBox}     onPress={()=>navigation.navigate('QuizD')}>
+            <Text style={styles.answerName}>/</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>       
-            <Text style={styles.answerName}>Mark's Language</Text>
+            <Text style={styles.answerName}>\</Text>
         </TouchableOpacity>
       </View>
 
       <View style={styles.Bottom}>
 
         <TouchableOpacity style={styles.button} onPress={()=>navigation.navigate('QuizD')}>
-            <Text  style={styles.buttonText}>NEXT</Text>
+            <Text  style={styles.buttonText}>SKIP</Text>
         </TouchableOpacity>
 
       </View>

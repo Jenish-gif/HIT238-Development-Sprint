@@ -7,33 +7,33 @@ const QuizA = ({navigation}) => {
 
       <View style={styles.question}>
           <Text style={styles.questionName}> 
-              Q1. What is HTML?
+              Q2. The correct sequence of HTML tags for starting a webpage is:
           </Text>
       </View>
 
       <View style={styles.answer}>
         <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>        
-            <Text style={styles.answerName}>Desktop Application</Text>
+            <Text style={styles.answerName}>Head, Title, HTML, body</Text>
         </TouchableOpacity>    
 
-        <TouchableOpacity style={styles.answerBox}>       
-            <Text style={styles.answerName} >Programming Language</Text>
+        <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>        
+            <Text style={styles.answerName} >HTML, Body, Title, Head</Text>
         </TouchableOpacity>
 
 
         <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>       
-            <Text style={styles.answerName}>Mobile Application</Text>
+            <Text style={styles.answerName}>HTML, Head, Title, Body</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>       
-            <Text style={styles.answerName}>Mark's Language</Text>
+        <TouchableOpacity style={styles.answerBox} onPress={()=>navigation.navigate('QuizB')}> 
+            <Text style={styles.answerName}>HTML, Head, Title, Body</Text>
         </TouchableOpacity>
       </View>
 
       <View style={styles.Bottom}>
 
         <TouchableOpacity style={styles.button} onPress={()=>navigation.navigate('QuizB')}>            
-            <Text  style={styles.buttonText}>NEXT</Text>
+            <Text  style={styles.buttonText}>SKIP</Text>
         </TouchableOpacity>
 
       </View>

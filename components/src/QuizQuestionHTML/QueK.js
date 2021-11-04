@@ -7,26 +7,28 @@ const QuizK = ({navigation}) => {
 
       <View style={styles.question}>
           <Text style={styles.questionName}> 
-              Q1. What is HTML?
+              Q12. Which of the following are the attributes of the
+
+tag?
           </Text>
       </View>
 
       <View style={styles.answer}>
         <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>        
-            <Text style={styles.answerName}>Desktop Application</Text>
+            <Text style={styles.answerName}>method</Text>
         </TouchableOpacity>    
 
-        <TouchableOpacity style={styles.answerBox}>       
-            <Text style={styles.answerName} >Programming Language</Text>
+        <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>          
+            <Text style={styles.answerName} >action</Text>
         </TouchableOpacity>
 
 
-        <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>       
-            <Text style={styles.answerName}>Mobile Application</Text>
+        <TouchableOpacity style={styles.answerBox}  onPress={()=>navigation.navigate('Result')}>   
+            <Text style={styles.answerName}>both a and b</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>       
-            <Text style={styles.answerName}>Mark's Language</Text>
+            <Text style={styles.answerName}>none of thr above</Text>
         </TouchableOpacity>
       </View>
 

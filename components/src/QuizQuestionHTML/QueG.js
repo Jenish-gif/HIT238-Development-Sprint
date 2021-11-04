@@ -7,33 +7,33 @@ const QuizG = ({navigation}) => {
 
       <View style={styles.question}>
           <Text style={styles.questionName}> 
-              Q1. What is HTML?
+              Q8. Which of the following is the container for tr, th, and td ?
           </Text>
       </View>
 
       <View style={styles.answer}>
         <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>        
-            <Text style={styles.answerName}>Desktop Application</Text>
+            <Text style={styles.answerName}>Data</Text>
         </TouchableOpacity>    
 
-        <TouchableOpacity style={styles.answerBox}>       
-            <Text style={styles.answerName} >Programming Language</Text>
+        <TouchableOpacity style={styles.answerBox}  onPress={()=>navigation.navigate('QuizH')}>      
+            <Text style={styles.answerName} >Table</Text>
         </TouchableOpacity>
 
 
         <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>       
-            <Text style={styles.answerName}>Mobile Application</Text>
+            <Text style={styles.answerName}>Group</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>       
-            <Text style={styles.answerName}>Mark's Language</Text>
+            <Text style={styles.answerName}>All of the above</Text>
         </TouchableOpacity>
       </View>
 
       <View style={styles.Bottom}>
 
         <TouchableOpacity style={styles.button} onPress={()=>navigation.navigate('QuizH')}> 
-            <Text  style={styles.buttonText}>NEXT</Text>
+            <Text  style={styles.buttonText}>SKIP</Text>
         </TouchableOpacity>
 
       </View>

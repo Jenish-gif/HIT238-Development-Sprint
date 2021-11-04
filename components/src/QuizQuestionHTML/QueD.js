@@ -7,33 +7,33 @@ const QuizD = ({navigation}) => {
 
       <View style={styles.question}>
           <Text style={styles.questionName}> 
-              Q1. What is HTML?
+              Q5. What is used to create hyperlink in HTML?
           </Text>
       </View>
 
       <View style={styles.answer}>
-        <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>        
-            <Text style={styles.answerName}>Desktop Application</Text>
+        <TouchableOpacity style={styles.answerBox}  onPress={()=>navigation.navigate('QuizE')}>       
+            <Text style={styles.answerName}>a href</Text>
         </TouchableOpacity>    
 
-        <TouchableOpacity style={styles.answerBox}>       
-            <Text style={styles.answerName} >Programming Language</Text>
+        <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>     
+            <Text style={styles.answerName} >a url</Text>
         </TouchableOpacity>
 
 
         <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>       
-            <Text style={styles.answerName}>Mobile Application</Text>
+            <Text style={styles.answerName}>a link</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>       
-            <Text style={styles.answerName}>Mark's Language</Text>
+            <Text style={styles.answerName}>a</Text>
         </TouchableOpacity>
       </View>
 
       <View style={styles.Bottom}>
 
         <TouchableOpacity style={styles.button} onPress={()=>navigation.navigate('QuizE')}>
-            <Text  style={styles.buttonText}>NEXT</Text>
+            <Text  style={styles.buttonText}>SKIP</Text>
         </TouchableOpacity>
 
       </View>

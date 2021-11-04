@@ -7,33 +7,33 @@ const QuizF = ({navigation}) => {
 
       <View style={styles.question}>
           <Text style={styles.questionName}> 
-              Q1. What is HTML?
+              Q7. Which of the following attribute is used to provide a unique name to an element?
           </Text>
       </View>
 
       <View style={styles.answer}>
         <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>        
-            <Text style={styles.answerName}>Desktop Application</Text>
+            <Text style={styles.answerName}>Class</Text>
         </TouchableOpacity>    
 
-        <TouchableOpacity style={styles.answerBox}>       
-            <Text style={styles.answerName} >Programming Language</Text>
+        <TouchableOpacity style={styles.answerBox} onPress={()=>navigation.navigate('QuizG')}>   
+            <Text style={styles.answerName} >id</Text>
         </TouchableOpacity>
 
 
         <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>       
-            <Text style={styles.answerName}>Mobile Application</Text>
+            <Text style={styles.answerName}>type</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.answerBox} onPress={()=>alert('Wrong Answer. Try Again')}>       
-            <Text style={styles.answerName}>Mark's Language</Text>
+            <Text style={styles.answerName}>None of the above</Text>
         </TouchableOpacity>
       </View>
 
       <View style={styles.Bottom}>
 
         <TouchableOpacity style={styles.button} onPress={()=>navigation.navigate('QuizG')}>
-            <Text  style={styles.buttonText}>NEXT</Text>
+            <Text  style={styles.buttonText}>SKIP</Text>
         </TouchableOpacity>
 
       </View>

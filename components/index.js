@@ -28,31 +28,28 @@ function MyStack() {
   return (
     <Stack.Navigator>
     <Stack.Screen name="Login Page" component={Title} />
-    <Stack.Screen name="Home" component={Home}/>  
+    <Stack.Screen name="Home" component={Home} options={{header: () => null}}/>  
     <Stack.Screen name="Result" component={result} />
     <Stack.Screen name="Profile" component={Profile}/>
     <Stack.Screen name="About" component={About}/>
     <Stack.Screen name="Contact" component={Contact}/>
     <Stack.Screen name="Score" component={Score}/>
     <Stack.Screen name="Test" component={Test}/>
-    <Stack.Screen name="Quiz" component={Quiz}/>
+    <Stack.Screen name="Quiz" component={Quiz} options={{header: () => null}}/>
     <Stack.Screen name="Development" component={Development}/>
-
-
-    <Stack.Screen name="QuizA" component={QuizA}/>
-    <Stack.Screen name="QuizB" component={QuizB}/>
-    <Stack.Screen name="QuizC" component={QuizC}/>
-    <Stack.Screen name="QuizD" component={QuizD}/>
-    <Stack.Screen name="QuizE" component={QuizE}/>
-    <Stack.Screen name="QuizF" component={QuizF}/>
-    <Stack.Screen name="QuizG" component={QuizG}/>
-    <Stack.Screen name="QuizH" component={QuizH}/>
-    <Stack.Screen name="QuizI" component={QuizI}/>
-    <Stack.Screen name="QuizJ" component={QuizJ}/>
-    <Stack.Screen name="QuizK" component={QuizK}/>
-
-  
-</Stack.Navigator>
+   
+    <Stack.Screen name="QuizA" component={QuizA} options={{header: () => null}}/>
+    <Stack.Screen name="QuizB" component={QuizB} options={{header: () => null}}/>
+    <Stack.Screen name="QuizC" component={QuizC} options={{header: () => null}}/>
+    <Stack.Screen name="QuizD" component={QuizD} options={{header: () => null}}/>
+    <Stack.Screen name="QuizE" component={QuizE} options={{header: () => null}}/>
+    <Stack.Screen name="QuizF" component={QuizF} options={{header: () => null}}/>
+    <Stack.Screen name="QuizG" component={QuizG} options={{header: () => null}}/>
+    <Stack.Screen name="QuizH" component={QuizH} options={{header: () => null}}/>
+    <Stack.Screen name="QuizI" component={QuizI} options={{header: () => null}}/>
+    <Stack.Screen name="QuizJ" component={QuizJ} options={{header: () => null}}/>
+    <Stack.Screen name="QuizK" component={QuizK} options={{header: () => null}}/>
+   </Stack.Navigator>
   );
 }
 
