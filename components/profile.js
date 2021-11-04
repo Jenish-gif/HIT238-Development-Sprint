@@ -11,7 +11,7 @@ const Profile =({navigation}) => {
         </TouchableOpacity>
 
 
-        <TouchableOpacity onPress={()=>navigation.navigate('Score')}>    
+        <TouchableOpacity onPress={()=>navigation.navigate('Contact')}>    
         <Text style={styles.asd}>Contact</Text>
         </TouchableOpacity>
 
